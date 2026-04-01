@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Pretendard", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-black bg-white;
+  }
+}
+
+/* Custom styles for the plumbing theme */
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 6s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee 15s linear infinite;
+}
+
+.animate-marquee:hover, .animate-marquee-fast:hover, .animate-marquee-slow:hover {
+  animation-play-state: paused;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

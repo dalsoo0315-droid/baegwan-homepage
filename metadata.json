@@ -1,0 +1,7 @@
+{
+  "name": "배관광고홈페이지",
+  "description": "싱크대, 변기, 하수구 막힘 해결 전문 서비스. 출장비 0원, 정찰제 운영, 멤버십 배관 관리 플랫폼.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
