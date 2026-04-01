@@ -173,7 +173,7 @@ const Navbar = ({
         <div className="flex items-center cursor-pointer group" onClick={() => setPage('home')}>
           <label className={`${logoImage ? 'bg-white' : 'bg-yellow-400'} rounded-xl ${!isShared ? 'cursor-pointer' : ''} relative overflow-hidden w-40 sm:w-48 h-10 sm:h-12 flex items-center justify-center transition-all`}>
             {logoImage ? (
-              <img src="/images/logo.jpeg" alt="달수배관케어 로고" className="w-full h-full object-contain" />
+              <img src="/images/logo.jpeg?v=2" alt="달수배관케어 로고" className="w-full h-full object-contain" />
             ) : (
               <div className="flex items-center gap-2 px-3">
                 <Wrench className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
